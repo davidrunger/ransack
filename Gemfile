@@ -42,7 +42,6 @@ else
     gem 'actionpack'
   end
 end
-gem 'mysql2'
 
 group :test do
   gem 'machinist', '~> 1.0.6'
