@@ -315,7 +315,7 @@ module Ransack
       context "ransackable_scope" do
         around(:each) do |example|
           Person.define_singleton_method(:name_eq) do |name|
-            self.where(name: name)
+            self.where(name:)
           end
 
           begin

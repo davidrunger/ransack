@@ -1,5 +1,5 @@
 AllCops:
-  TargetRubyVersion: 3.0
+  TargetRubyVersion: 3.3
 
   DisabledByDefault: true
 
@@ -47,4 +47,3 @@ Style/SelfAssignment:
 
 Style/Semicolon:
   Enabled: true
-

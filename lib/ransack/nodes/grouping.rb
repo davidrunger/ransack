@@ -22,7 +22,7 @@ module Ransack
 
       def translate(key, options = {})
         super or Translate.attribute(
-          key.to_s, options.merge(context: context)
+          key.to_s, options.merge(context:)
         )
       end
 
