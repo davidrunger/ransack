@@ -143,7 +143,7 @@ module Ransack
 
         context 'has_one through associations' do
           let(:address)  { Address.create!(city: 'Boston') }
-          let(:org) { Organization.create!(name: 'Testorg', address: address) }
+          let(:org) { Organization.create!(name: 'Testorg', address:) }
           let!(:employee) { Employee.create!(name: 'Ernie', organization: org) }
 
           it 'works when has_one through association is first' do

@@ -334,13 +334,13 @@ module Schema
       person = Person.make
       Note.make(notable: person)
       3.times do
-        article = Article.make(person: person)
+        article = Article.make(person:)
         3.times do
           article.tags = [Tag.make, Tag.make, Tag.make]
         end
         Note.make(notable: article)
         10.times do
-          Comment.make(article: article, person: person)
+          Comment.make(article:, person:)
         end
       end
     end
